@@ -7,25 +7,48 @@
     <style>
         body {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
             height: 100vh;
             margin: 0;
         }
 
-        .image-container {
-            padding: 25%; /* Adjust the padding value as needed */
+        .social-media-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px; /* Adjust the margin value as needed */
+        }
+
+        .social-media-links a {
+            margin: 0 10px; /* Adjust the margin value as needed */
         }
 
         img {
-            max-width: 100%;
+            max-width: 50%;
             height: auto;
         }
+
+        /* Add additional styling for your social media icons if needed */
     </style>
 </head>
 <body>
-    <div class="image-container">
-        <img src="images/together we are better.png" alt="together we are better logo">
+    <img src="images/together we are better.png" alt="together we are better logo">
+
+    <div class="social-media-links">
+        <a href="https://www.facebook.com/togetherwab" target="_blank" rel="noopener noreferrer">
+            <img src="images/facebook.png" alt="Facebook" width="30" height="30">
+        </a>
+        <a href="https://x.com/togetherwab" target="_blank" rel="noopener noreferrer">
+            <img src="images/X.png" alt="X" width="30" height="30">
+        </a>
+        <a href="https://www.instagram.com/togetherwab" target="_blank" rel="noopener noreferrer">
+            <img src="images/instagram.png" alt="Instagram" width="30" height="30">
+        </a>
+        <a href="https://www.tiktok.com/@togetherwab" target="_blank" rel="noopener noreferrer">
+            <img src="images/tiktok.png" alt="TikTok" width="30" height="30">
+        </a>
+        <!-- Add more social media links as needed -->
     </div>
 </body>
 </html>
