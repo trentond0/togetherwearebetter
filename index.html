@@ -12,33 +12,46 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
+            font-family: Helvetica, sans-serif;
         }
 
         .social-media-links {
             display: flex;
             justify-content: center;
-            margin-top: 0; /* Adjust the margin value as needed */
+            margin-top: 1%; /* Adjust the margin value as needed */
+            width: 20%; /* Adjust the width of the container */
         }
 
         .social-media-links a {
-            margin: 2%; /* Adjust the margin value as needed */
+            margin: 0 10%; /* Adjust the margin value as needed */
+            flex: 1; /* Distribute available space equally among links */
         }
 
-        .social-media-links a {
-            max-width: 2.5%;
+        .social-media-links a img {
+            max-width: 100%;
             height: auto;
         }
 
-        img {
-            max-width: 75%;
-            height: auto;
+        .logo {
+            font-size: 5vw; /* Adjust the percentage of viewport width (vw) as needed */
+            font-weight: bold;
+            margin-bottom: 1%; /* Adjust the margin value as needed */
         }
 
-        /* Add additional styling for your social media icons if needed */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: black;
+                color: white;
+            }
+
+            .social-media-links a {
+                filter: invert(1);
+            }
+        }
     </style>
 </head>
 <body>
-    <img src="images/together we are better.png" alt="together we are better logo">
+    <div class="logo">together we are better.</div>
 
     <div class="social-media-links">
         <a href="https://www.facebook.com/togetherwab" target="_blank" rel="noopener noreferrer">
@@ -53,7 +66,6 @@
         <a href="https://www.tiktok.com/@togetherwab" target="_blank" rel="noopener noreferrer">
             <img src="images/tiktok.png" alt="TikTok">
         </a>
-        <!-- Add more social media links as needed -->
     </div>
 </body>
 </html>
