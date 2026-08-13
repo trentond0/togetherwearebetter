@@ -18,19 +18,16 @@ a {
   color: inherit;
 }
 
-.products {
+.grid {
     display: flex;
     flex-wrap: wrap;
+    width: 95%;
     justify-content: center;
     gap: 20px;
 }
 
-.product-image {
-  display: block;
-  width: 90%;        /* takes up to 90% of container width */
-  max-width: 400px;  /* never larger than this */
-  height: auto;      /* preserves aspect ratio */
-  margin: 0 auto;    /* center if block-level */
+.image {
+  width: 400px;
 }
 
 @media (prefers-color-scheme: dark) {
