@@ -5,6 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 20px;
   margin: 0;
   font-family: Helvetica, sans-serif;
   font-weight: bold;
@@ -21,12 +22,15 @@ a {
 .grid {
     display: flex;
     flex-wrap: wrap;
-    width: 95%;
+    width: 100%;
+    max-width: calc(100vw - 40px);
     justify-content: center;
     gap: 20px;
 }
 
 .image {
+  display: block;
+  width: 100%;
   max-width: 400px;
 }
 
